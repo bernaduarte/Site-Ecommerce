@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Vegra Doces</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Banner topo com logo e categorias -->
+  <header class="top-banner">
+    <div class="logo">Vegra Doces</div>
+    <nav class="categories">
+      <a href="#balas" class="category-link">Balas</a>
+      <a href="#biscoitos" class="category-link">Biscoitos</a>
+      <a href="#chocolates" class="category-link">Chocolates</a>
+      <a href="#bebidas" class="category-link">Bebidas</a>
+      <a href="#doces" class="category-link">Doces</a>
+      <a href="#light" class="category-link">Light</a>
+    </nav>
+  </header>
+
+  <!-- Barra fixa com conta, carrinho e favoritos -->
+  <div class="topbar-fixed">
+    <input type="text" placeholder="Pesquisar produtos..." />
+    <div class="top-icons">
+      <span class="top-icon">🔒 Minha Conta</span>
+      <span class="top-icon" id="cart-btn">🛒 Meu Carrinho (<span id="cart-count">0</span>)</span>
+      <span class="top-icon">❤️ Favoritos</span>
+    </div>
+  </div>
+
+  <!-- Carrossel principal -->
+  <section class="main-carousel">
+    <div class="carousel-track">
+      <div class="carousel-slide">🌟 Promoção da Semana 🌟</div>
+      <div class="carousel-slide">🎁 Frete grátis acima de R$100</div>
+      <div class="carousel-slide">🍬 Doces direto da fábrica</div>
+    </div>
+  </section>
+
+  <!-- Seções de produtos -->
+  <section id="balas" class="category-section">
+    <h2>Balas</h2>
+    <div class="product-grid">
+      <div class="product-card" data-name="Bala 1" data-desc="Pacote com 600g, sabor morango." data-price="12.50">
+        <h3>Bala 1</h3>
+        <p>Pacote com 600g</p>
+        <div class="product-controls">
+          <input type="number" min="1" value="1" />
+          <button class="add-to-cart-btn">Adicionar</button>
+        </div>
+      </div>
+      <div class="product-card" data-name="Bala 2" data-desc="Pacote com 500g, sabor uva." data-price="10.00">
+        <h3>Bala 2</h3>
+        <p>Pacote com 500g</p>
+        <div class="product-controls">
+          <input type="number" min="1" value="1" />
+          <button class="add-to-cart-btn">Adicionar</button>
+        </div>
+      </div>
+      <div class="product-card" data-name="Bala 3" data-desc="Pacote com 400g, sabor laranja." data-price="11.00">
+        <h3>Bala 3</h3>
+        <p>Pacote com 400g</p>
+        <div class="product-controls">
+          <input type="number" min="1" value="1" />
+          <button class="add-to-cart-btn">Adicionar</button>
+        </div>
+      </div>
+      <div class="product-card" data-name="Bala 4" data-desc="Pacote com 700g, sabor tutti-frutti." data-price="13.00">
+        <h3>Bala 4</h3>
+        <p>Pacote com 700g</p>
+        <div class="product-controls">
+          <input type="number" min="1" value="1" />
+          <button class="add-to-cart-btn">Adicionar</button>
+        </div>
+      </div>
+      <div class="product-card" data-name="Bala 5" data-desc="Pacote com 600g, sabor menta." data-price="12.00">
+        <h3>Bala 5</h3>
+        <p>Pacote com 600g</p>
+        <div class="product-controls">
+          <input type="number" min="1" value="1" />
+          <button class="add-to-cart-btn">Adicionar</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Banner entre categorias -->
+  <section class="banner-between">
+    <img src="https://via.placeholder.com/1200x150/56a085/ffffff?text=Banner+Especial" alt="Banner especial" />
+  </section>
+
+  <section id="biscoitos" class="category-section">
+    <h2>Biscoitos</h2>
+    <div class="product-grid">
+      <div class="product-card" data-name="Biscoito 1" data-desc="Pacote com 160g, sabor chocolate." data-price="6.50">
+        <h3>Biscoito 1</h3>
+        <p>Pacote com 160g</p>
+        <div class="product-controls">
+          <input type="number" min="1" value="1" />
+          <button class="add-to-cart-btn">Adicionar</button>
+        </div>
+      </div>
+      <div class="product-card" data-name="Biscoito 2" data-desc="Pacote com 200g, sabor baunilha." data-price="7.00">
+        <h3>Biscoito 2</h3>
+        <p>Pacote com 200g</p>
+        <div class="product-controls">
+          <input type="number" min="1" value="1" />
+          <button class="add-to-cart-btn">Adicionar</button>
+        </div>
+      </div>
+      <div class="product-card" data-name="Biscoito 3" data-desc="Pacote com 150g, sabor morango." data-price="6.00">
+        <h3>Biscoito 3</h3>
+        <p>Pacote com 150g</p>
+        <div class="product-controls">
+          <input type="number" min="1" value="1" />
+          <button class="add-to-cart-btn">Adicionar</button>
+        </div>
+      </div>
+      <div class="product-card" data-name="Biscoito 4" data-desc="Pacote com 180g, sabor aveia." data-price="6.80">
+        <h3>Biscoito 4</h3>
+        <p>Pacote com 180g</p>
+        <div class="product-controls">
+          <input type="number" min="1" value="1" />
+          <button class="add-to-cart-btn">Adicionar</button>
+        </div>
+      </div>
+      <div class="product-card" data-name="Biscoito 5" data-desc="Pacote com 160g, sabor limão." data-price="7.20">
+        <h3>Biscoito 5</h3>
+        <p>Pacote com 160g</p>
+        <div class="product-controls">
+          <input type="number" min="1" value="1" />
+          <button class="add-to-cart-btn">Adicionar</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Replicar para Chocolates, Bebidas, Doces e Light -->
+
+  <section id="chocolates" class="category-section">
+    <h2>Chocolates</h2>
+    <div class="product-grid">
+      <div class="product-card" data-name="Chocolate 1" data-desc="Barra de chocolate ao leite 100g" data-price="8.50">
+        <h3>Chocolate 1</h3>
+        <p>100g</p>
+        <div class="product-controls">
+          <input type="number" min="1" value="1" />
+          <button class="add-to-cart-btn">Adicionar</button>
+        </div>
+      </div>
+      <div class="product-card" data-name="Chocolate 2" data-desc="Barra de chocolate amargo 90g" data-price="9.00">
+        <h3>Chocolate 2</h3>
+        <p>90g</p>
+        <div class="product-controls">
+          <input type="number" min="1" value="1" />
+          <button class="add-to-cart-btn">Adicionar</button>
+        </div>
+      </div>
+      <div class="product-card" data-name="Chocolate 3" data-desc="Chocolate meio amargo 85g" data-price="9.20">
+        <h3>Chocolate 3</h3>
+        <p>85g</p>
+        <div class="product-controls">
+          <input type="number" min="1" value="1" />
+          <button class="add-to-cart-btn">Adicionar</button>
+        </div>
+      </div>
+      <div class="product-card" data-name="Chocolate 4" data-desc="Chocolate branco 80g" data-price="8.80">
+        <h3>Chocolate 4</h3>
+        <p>80g</p>
+        <div class="product-controls">
+          <input type="number" min="1" value="1" />
+          <button class="add-to-cart-btn">Adicionar</button>
+        </div>
+      </div>
+      <div class="product-card" data-name="Chocolate 5" data-desc="Chocolate com avelã 90g" data-price="9.50">
+        <h3>Chocolate 5</h3>
+        <p>90g</p>
+        <div class="product-controls">
+          <input type="number" min="1" value="1" />
+          <button class="add-to-cart-btn">Adicionar</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="bebidas" class="category-section">
+    <h2>Bebidas</h2>
+    <div class="product-grid">
+      <div class="product-card" data-name="Guaravita" data-desc="Embalagem 500ml" data-price="4.50">
+        <h3>Guaravita</h3>
+        <p>500ml</p>
+        <div class="product-controls">
+          <input type="number" min="1" value="1" />
+          <button class="add-to-cart-btn">Adicionar</button>
+        </div>
+      </div>
+      <div class="product-card" data-name="Água Mineral" data-desc="Garrafa 1.5L" data-price="3.00">
+        <h3>Água Mineral</h3>
+        <p>1.5L</p>
+        <div class="product-controls">
+          <input type="number" min="1" value="1" />
+          <button class="add-to-cart-btn">Adicionar</button>
+        </div>
+      </div>
+      <div class="product-card" data-name="Refrigerante" data-desc="Lata 350ml" data-price="5.00">
+        <h3>Refrigerante</h3>
+        <p>350ml</p>
+        <div class="product-controls">
+          <input type="number" min="1" value="1" />
+          <button class="add-to-cart-btn">Adicionar</button>
+        </div>
+      </div>
+      <div class="product-card" data-name="Suco Natural" data-desc="Embalagem 300ml" data-price="6.00">
+        <h3>Suco Natural</h3>
+        <p>300ml</p>
+        <div class="product-controls">
+          <input type="number" min="1" value="1" />
+          <button class="add-to-cart-btn">Adicionar</button>
+        </div>
+      </div>
+      <div class="product-card" data-name="Chá Gelado" data-desc="Embalagem 400ml" data-price="5.50">
+        <h3>Chá Gelado</h3>
+        <p>400ml</p>
+        <div class="product-controls">
+          <input type="number" min="1" value="1" />
+          <button class="add-to-cart-btn">Adicionar</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="doces" class="category-section">
+    <h2>Doces</h2>
+    <div class="product-grid">
+      <div class="product-card" data-name="Doce 1" data-desc="Doce caseiro tradicional" data-price="7.00">
+        <h3>Doce 1</h3>
+        <p>Tradicional</p>
+        <div class="product-controls">
+          <input type="number" min="1" value="1" />
+          <button class="add-to-cart-btn">Adicionar</button>
+        </div>
+      </div>
+      <div class="product-card" data-name="Doce 2" data-desc="Doce de leite caseiro" data-price="8.50">
+        <h3>Doce 2</h3>
+        <p>Doce de leite</p>
+        <div class="product-controls">
+          <input type="number" min="1" value="1" />
+          <button class="add-to-cart-btn">Adicionar</button>
+        </div>
+      </div>
+      <div class="product-card" data-name="Doce 3" data-desc="Doce de coco" data-price="7.50">
+        <h3>Doce 3</h3>
+        <p>Coco</p>
+        <div class="product-controls">
+          <input type="number" min="1" value="1" />
+          <button class="add-to-cart-btn">Adicionar</button>
+        </div>
+      </div>
+      <div class="product-card" data-name="Doce 4" data-desc="Doce de amendoim" data-price="7.80">
+        <h3>Doce 4</h3>
+        <p>Amendoim</p>
+        <div class="product-controls">
+          <input type="number" min="1" value="1" />
+          <button class="add-to-cart-btn">Adicionar</button>
+        </div>
+      </div>
+      <div class="product-card" data-name="Doce 5" data-desc="Doce diet" data-price="8.00">
+        <h3>Doce 5</h3>
+        <p>Diet</p>
+        <div class="product-controls">
+          <input type="number" min="1" value="1" />
+          <button class="add-to-cart-btn">Adicionar</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="light" class="category-section">
+    <h2>Light</h2>
+    <div class="product-grid">
+      <div class="product-card" data-name="Light 1" data-desc="Produto light sabor morango" data-price="9.00">
+        <h3>Light 1</h3>
+        <p>Morango</p>
+        <div class="product-controls">
+          <input type="number" min="1" value="1" />
+          <button class="add-to-cart-btn">Adicionar</button>
+        </div>
+      </div>
+      <div class="product-card" data-name="Light 2" data-desc="Produto light sabor limão" data-price="9.50">
+        <h3>Light 2</h3>
+        <p>Limão</p>
+        <div class="product-controls">
+          <input type="number" min="1" value="1" />
+          <button class="add-to-cart-btn">Adicionar</button>
+        </div>
+      </div>
+      <div class="product-card" data-name="Light 3" data-desc="Produto light sabor laranja" data-price="9.20">
+        <h3>Light 3</h3>
+        <p>Laranja</p>
+        <div class="product-controls">
+          <input type="number" min="1" value="1" />
+          <button class="add-to-cart-btn">Adicionar</button>
+        </div>
+      </div>
+      <div class="product-card" data-name="Light 4" data-desc="Produto light sabor uva" data-price="9.10">
+        <h3>Light 4</h3>
+        <p>Uva</p>
+        <div class="product-controls">
+          <input type="number" min="1" value="1" />
+          <button class="add-to-cart-btn">Adicionar</button>
+        </div>
+      </div>
+      <div class="product-card" data-name="Light 5" data-desc="Produto light sabor abacaxi" data-price="9.30">
+        <h3>Light 5</h3>
+        <p>Abacaxi</p>
+        <div class="product-controls">
+          <input type="number" min="1" value="1" />
+          <button class="add-to-cart-btn">Adicionar</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal Produto -->
+  <div id="product-modal" class="modal hidden">
+    <div class="modal-content">
+      <span class="modal-close">&times;</span>
+      <h3 id="modal-name"></h3>
+      <p id="modal-desc"></p>
+      <p><strong>Preço: R$ <span id="modal-price"></span></strong></p>
+      <div class="modal-controls">
+        <input type="number" min="1" value="1" id="modal-quantity" />
+        <button id="modal-add-to-cart">Adicionar ao Carrinho</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Carrinho (inicialmente fechado) -->
+  <aside id="cart-sidebar" class="cart-sidebar hidden">
+    <div class="cart-header">
+      <h3>Meu Carrinho</h3>
+      <button id="cart-close-btn">&times;</button>
+    </div>
+    <ul id="cart-items"></ul>
+    <div class="cart-total">Total: R$ <span id="cart-total">0.00</span></div>
+  </aside>
+
+  <!-- Seção Sobre Nós -->
+  <section id="sobre-nos" class="sobre-nos-section">
+    <h2>Sobre Nós</h2>
+    <p>Somos a Vegra Doces, apaixonados por levar os melhores doces e bebidas para você, com qualidade, carinho e um toque aconchegante em cada produto.</p>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
